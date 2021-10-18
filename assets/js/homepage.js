@@ -1,5 +1,11 @@
-var getUserRepos = function() {
-    fetch("https://api.github.com/users/nathanroses/repos");
-};
+fetch("https://api.github.com/users/nathanroses/repos").then(function(response) {
+    response.json().then(function(data) {
+        console.log(data);
+    });
+});
 
-getUserRepos(); 
+fetch("https://api.github.com/users/nathanroses/followers").then(function(response) {
+    response.json().then(function(data) {
+        console.log(data);
+    });
+});
