@@ -1,10 +1,10 @@
 :root {
-  --primary: #ccdad1;
-  --secondary: #9caea9;
-  --tertiary: #788585;
-  --light-dark: #6f6866;
-  --dark: #38302e;
-  --border-radius: .3rem;
+  --primary: hsla(217, 17%, 80%, 0.788);
+  --secondary: #ffffff;
+  --tertiary: #000000;
+  --light-dark: #000000;
+  --dark: #070707fb;
+  --border-radius: 0.3rem;
 }
 
 * {
@@ -34,7 +34,7 @@ h6 {
 }
 
 main {
-  margin: 20px auto;
+  margin: 60px auto;
   width: 94%;
 }
 
@@ -42,27 +42,23 @@ p {
   font-size: 1.2rem;
 }
 
- .btn {
+.btn {
   font-size: 1.3rem;
-  text-decoration:none;
+  text-decoration: none;
   padding: 6px 5px;
   width: 100%;
   display: block;
-  margin: 5px 0;
   border-radius: var(--border-radius);
-  color: var(--primary);
+  color: var(--secondary);
   border: none;
   outline: none;
   background-color: var(--light-dark);
-  box-shadow: 3px 3px var(--dark);
   transform: translate(-1px, -1px);
 }
 
- .btn:hover {
-  color: var(--primary);
-  background-color: var(--tertiary);
-  transform: translate(0, 0);
-  box-shadow: 2px 2px var(--dark);
+.btn:hover {
+  padding: 10px;
+  color: rgb(138, 252, 138);
 }
 
 .btn-inline {
@@ -85,7 +81,7 @@ p {
   font-size: 1.2rem;
 }
 
- .btn-back:hover {
+.btn-back:hover {
   color: var(--primary);
   background-color: var(--tertiary);
   transform: translate(0, 0);
@@ -133,7 +129,7 @@ p {
 .status-icon {
   padding: 2px 5px;
   margin: 0 5px;
-  background-color: rgba(255,255,255, 1);
+  background-color: rgba(255, 255, 255, 1);
   border-radius: var(--border-radius);
 }
 
@@ -156,7 +152,7 @@ p {
   color: var(--primary);
   background-color: var(--dark);
   padding: 2.5%;
-  border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
+  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
 
 .card-body {
@@ -198,6 +194,16 @@ p {
   text-transform: uppercase;
 }
 
+.your-name-t {
+  color: rgb(0, 0, 0);
+  background-color: hsla(236, 84%, 71%, 0.08);
+  font-size: 25px;
+  margin: 25px;
+  display: flexbox;
+  padding: 25px 50px;
+  text-align: center;
+  border-radius: 80px;
+}
 
 /* FLEX CONTENT */
 .flex-row {
@@ -220,7 +226,7 @@ p {
 }
 
 .justify-flex-start {
-  justify-content: flex-start
+  justify-content: flex-start;
 }
 
 .justify-flex-end {
@@ -345,7 +351,6 @@ p {
     flex: 0 0 100%;
   }
 }
-
 
 /* col-md */
 @media screen and (min-width: 768px) {
@@ -499,5 +504,3 @@ p {
     flex: 0 0 100%;
   }
 }
-
-

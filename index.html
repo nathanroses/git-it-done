@@ -14,7 +14,7 @@
 <body class="flex-column min-100-vh">
   <header class="hero">
     <h1 class="app-title"><i class="fab fa-github"></i> Git it Done!</h1>
-    <p>Search for a GitHub user or click on a language to see a list of repositories and how many open issues they have!
+    <p>Search for a GitHub user or click on a language to see a list of repositories and open issues
     </p>
   </header>
 
@@ -24,7 +24,7 @@
       <div class="card">
         <h3 class="card-header text-uppercase">Search By User</h3>
        <form id="user-form" class="card-body">
-         <label class="form-label" for="username">Username</label>
+         <label class="form-label" for="username"></label>
          <input name="username" id="username" type="text" autofocus="true" class="form-input"  />
          <button type="submit" class="btn">Get User</button>
        </form>
@@ -32,7 +32,10 @@
       </div>
     </div>
 
-    <div class="col-12 col-md-8"></div>
+    <div class="col-12 col-md-8">
+      <h2 class="subtitle" id="your-name">Showing Current Repository Status:<span id="repo-search-term" class="your-name-t"></span></h2>
+      <div id="repos-container" class="list-group"></div>
+    </div>
   </main>
 
 
